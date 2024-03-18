@@ -9,19 +9,35 @@
   background-color: #242625;
 }
 .home-container1 {
-  flex: 0 0 auto;
-  width: 200px;
+  flex: 1 1;
+  width: 100%;
+  height: 100%;
+  margin: 3%;
   display: flex;
+  position: relative;
   align-items: flex-start;
   flex-direction: column;
 }
 .home-image {
   width: 40%;
   height: auto;
+  align-self: center;
   object-fit: cover;
+  padding-left: 6%;
+}
+.home-banner {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .home-text {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-twounits);
 }
 .home-social-bar {
   width: 100%;
@@ -35,22 +51,12 @@
   height: var(--dl-size-size-xsmall);
   margin-right: var(--dl-space-space-twounits);
 }
-.home-icon02 {
+.home-icon2 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
   margin-right: var(--dl-space-space-twounits);
 }
-.home-icon04 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-  margin-right: var(--dl-space-space-twounits);
-}
-.home-icon06 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-  margin-right: var(--dl-space-space-twounits);
-}
-.home-icon08 {
+.home-icon4 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
@@ -63,17 +69,43 @@
   .home-image {
     align-self: center;
   }
-  .home-text {
+  .home-banner {
+    padding: var(--dl-space-space-fourunits);
     align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-text {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  .home-text3 {
+    font-weight: 600;
+  }
+}
+@media(max-width: 991px) {
+  .home-text {
+    text-align: center;
   }
 }
 @media(max-width: 767px) {
+  .home-banner {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
   .home-social-bar {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
 }
 @media(max-width: 479px) {
+  .home-banner {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
   .home-social-bar {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
