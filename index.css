@@ -1,28 +1,106 @@
 
 .home-container {
   flex: auto;
-  width: 100%;
-  height: 100%;
   min-height: 100vh;
-  margin: 0%;
   display: flex;
-  position: relative;
   align-items: center;
   flex-direction: column;
   overflow: auto;
   background-color: var(--notland-bg);
 }
-.home-image {
+
+.header-logo {
+  position:absolute;
   width: 50%;
   height: auto;
-  align-self: center;
-  object-fit: cover;
-  padding-top: 3%;
-  padding-left: 5%;
+  max-height: 70%;
+  color: var(--notland-accent-text);
+  fill: currentColor;
+  top:0;
+  bottom:10rem;
+  right:0;
+  left:0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.caption-container-outer{
+  position:relative;
+  height:100%;
+  width:100%;
+  overflow: hidden;
+}
+
+.caption-container-inner{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.caption-text{
+  font-size: clamp(2rem, 5vw, 7rem);
+  margin-top: auto;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.home-header {
+  height: 99vh;
+  width: 100%;
+  background-color: var(--notland-accent);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-border {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="60"><defs><pattern id="border" patternUnits="userSpaceOnUse" width="635" height="60"><path d="M 27.794277,9.6482623 C 24.148992,9.4741063 21.13802,12.735611 21.480008,16.367755 l 1.573235,16.715088 c 0.342156,3.632618 -2.664847,6.719485 -6.314255,6.719485 H 0 V 60 H 635 V 39.802328 h -16.73917 c -3.64766,0 -6.71254,-3.093247 -6.31389,-6.719485 l 1.57362,-20.332681 c 0.38595,-3.6266696 -2.66188,-6.7194964 -6.31381,-6.7199495 l -50.4463,3.6180498 c -3.644,-0.1746035 -6.65633,3.0873487 -6.31401,6.7194927 l 1.57403,16.715088 c 0.33798,3.632137 -2.66275,6.719485 -6.31478,6.719485 h -33.23685 c -3.64759,0 -6.65559,-3.087347 -6.31404,-6.719485 l 1.57317,-10.684876 c 0.33601,-3.632165 -2.6627,-6.719493 -6.31309,-6.719493 h -50.44876 c -3.64971,0 -6.65624,3.087349 -6.31438,6.719493 l 1.57173,10.684876 c 0.35703,3.632625 -2.66621,6.719485 -6.31459,6.719485 h -33.23621 c -3.64798,0 -6.71254,-3.093247 -6.31396,-6.719485 l 1.57259,-14.302469 c 0.39806,-3.62668 -2.66593,-6.719496 -6.31407,-6.719949 L 345.17437,9.6482623 c -3.6453,-0.1745525 -6.65582,3.0873487 -6.31421,6.7194927 l 1.57382,16.715088 c 0.34027,3.632137 -2.66495,6.719485 -6.31478,6.719485 h -33.237 c -3.64887,0 -6.61297,-3.083676 -6.31387,-6.719485 l 1.57237,-19.127705 c 0.29876,-3.635796 -2.66525,-6.7190382 -6.31443,-6.7194941 l -50.44545,0.7239656 c -3.64892,0.051981 -6.62492,3.0841575 -6.31447,6.7194935 l 1.57311,18.40374 c 0.31052,3.635292 -2.66477,6.719485 -6.31443,6.719485 H 195.0881 c -3.64881,0 -6.65535,-3.087347 -6.31374,-6.719485 L 190.6056,6.7194928 C 190.94755,3.0873504 187.94117,2.7952753e-7 184.29212,2.7952753e-7 L 133.5874,3e-7 c -3.64544,0.1747694 -6.71325,3.0932539 -6.31427,6.7199495 l 1.57326,26.3628932 c 0.39917,3.626654 -2.66459,6.719485 -6.31419,6.719485 H 89.294922 c -3.648701,0 -6.712363,-3.093247 -6.313813,-6.719485 l 1.572792,-14.302469 c 0.399278,-3.626677 -2.664913,-6.719496 -6.313882,-6.719949 z" style="fill:%23000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill" id="layer1" /></pattern></defs><rect width="100%" height="100%" fill="url(%23border)"/></svg>');
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="60"><defs><pattern id="border" patternUnits="userSpaceOnUse" width="635" height="60"><path d="M 27.794277,9.6482623 C 24.148992,9.4741063 21.13802,12.735611 21.480008,16.367755 l 1.573235,16.715088 c 0.342156,3.632618 -2.664847,6.719485 -6.314255,6.719485 H 0 V 60 H 635 V 39.802328 h -16.73917 c -3.64766,0 -6.71254,-3.093247 -6.31389,-6.719485 l 1.57362,-20.332681 c 0.38595,-3.6266696 -2.66188,-6.7194964 -6.31381,-6.7199495 l -50.4463,3.6180498 c -3.644,-0.1746035 -6.65633,3.0873487 -6.31401,6.7194927 l 1.57403,16.715088 c 0.33798,3.632137 -2.66275,6.719485 -6.31478,6.719485 h -33.23685 c -3.64759,0 -6.65559,-3.087347 -6.31404,-6.719485 l 1.57317,-10.684876 c 0.33601,-3.632165 -2.6627,-6.719493 -6.31309,-6.719493 h -50.44876 c -3.64971,0 -6.65624,3.087349 -6.31438,6.719493 l 1.57173,10.684876 c 0.35703,3.632625 -2.66621,6.719485 -6.31459,6.719485 h -33.23621 c -3.64798,0 -6.71254,-3.093247 -6.31396,-6.719485 l 1.57259,-14.302469 c 0.39806,-3.62668 -2.66593,-6.719496 -6.31407,-6.719949 L 345.17437,9.6482623 c -3.6453,-0.1745525 -6.65582,3.0873487 -6.31421,6.7194927 l 1.57382,16.715088 c 0.34027,3.632137 -2.66495,6.719485 -6.31478,6.719485 h -33.237 c -3.64887,0 -6.61297,-3.083676 -6.31387,-6.719485 l 1.57237,-19.127705 c 0.29876,-3.635796 -2.66525,-6.7190382 -6.31443,-6.7194941 l -50.44545,0.7239656 c -3.64892,0.051981 -6.62492,3.0841575 -6.31447,6.7194935 l 1.57311,18.40374 c 0.31052,3.635292 -2.66477,6.719485 -6.31443,6.719485 H 195.0881 c -3.64881,0 -6.65535,-3.087347 -6.31374,-6.719485 L 190.6056,6.7194928 C 190.94755,3.0873504 187.94117,2.7952753e-7 184.29212,2.7952753e-7 L 133.5874,3e-7 c -3.64544,0.1747694 -6.71325,3.0932539 -6.31427,6.7199495 l 1.57326,26.3628932 c 0.39917,3.626654 -2.66459,6.719485 -6.31419,6.719485 H 89.294922 c -3.648701,0 -6.712363,-3.093247 -6.313813,-6.719485 l 1.572792,-14.302469 c 0.399278,-3.626677 -2.664913,-6.719496 -6.313882,-6.719949 z" style="fill:%23000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill" id="layer1" /></pattern></defs><rect width="100%" height="100%" fill="url(%23border)"/></svg>');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  height: 60px;
+  width:100%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -55px;
+  background-color: var(--notland-bg);
+}
+
+.cloud-left{
+  position: absolute;
+  max-width: 15vw;
+  height: auto;
+  left:0;
+  bottom:30vh;
   color: var(--notland-accent-text);
   fill: currentColor;
 }
 
+.cloud-right{
+  position: absolute;
+  max-width: 30vw;
+  height: auto;
+  right:0;
+  top:10vh;
+  color: var(--notland-accent-text);
+  fill: currentColor;
+}
+
+.cloud-box{
+  position: absolute;
+  width:100%;
+  height:100%;
+}
 .social-box{
   max-width: 70rem;
   display: flex;
@@ -53,6 +131,14 @@
 }
 
 @media(max-width: 479px) {
+  .caption-text{
+    padding-bottom: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .header-logo{
+    width:70%;
+  }
   .social-box{
     flex-wrap: wrap;
     line-height: 5rem;

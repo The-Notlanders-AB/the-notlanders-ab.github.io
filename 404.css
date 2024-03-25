@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: var(--notland-accent);
 }
 .not-found-container1 {
   display: flex;
@@ -15,21 +16,24 @@
   justify-content: center;
 }
 .not-found-text1 {
-  color: rgb(38, 38, 38);
+  color: rgb(255, 255, 255);
   font-size: 252px;
-  margin-top: -20px;
+  margin-top: 1rem;
   font-weight: 900;
   margin-bottom: -20px;
   letter-spacing: -20px;
 }
 .not-found-container2 {
-  width: 421px;
+  color: rgb(255, 255, 255);
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin: 1rem auto;
 }
 .not-found-text2 {
+  color: rgb(255, 255, 255);
   text-align: center;
   font-weight: 400;
 }

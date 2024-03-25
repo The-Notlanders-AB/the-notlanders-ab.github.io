@@ -26,7 +26,7 @@
 
   --notland-bg: white;
   --notland-accent-text: white;
-  --notland-accent: #e24338;
+  --notland-accent: #388de2;
   --notland-secondary-accent: #344599;
   --notland-text: rgb(66, 66, 68);
 
@@ -34,59 +34,47 @@
 
 @font-face {
   font-family: 'nunitoregular';
-  src: url('/Fonts/nunito-regular-webfont.woff2') format('woff2'),
-       url('/Fonts/nunito-regular-webfont.woff') format('woff');
+  src: url('Fonts/nunito-regular-webfont.woff2') format('woff2'),
+       url('Fonts/nunito-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'nunitobold';
-  src: url('/Fonts/nunito-bold-webfont.woff2') format('woff2'),
-       url('/Fonts/nunito-bold-webfont.woff') format('woff');
+  src: url('Fonts/nunito-bold-webfont.woff2') format('woff2'),
+       url('Fonts/nunito-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'nunitomedium';
-  src: url('/Fonts/nunito-medium-webfont.woff2') format('woff2'),
-       url('/Fonts/nunito-medium-webfont.woff') format('woff');
+  src: url('Fonts/nunito-medium-webfont.woff2') format('woff2'),
+       url('Fonts/nunito-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'denk_oneregular';
-  src: url('/Fonts/denkone-regular-webfont.woff2') format('woff2'),
-       url('/Fonts/denkone-regular-webfont.woff') format('woff');
+  src: url('Fonts/denkone-regular-webfont.woff2') format('woff2'),
+       url('Fonts/denkone-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'nunitoextralight';
-  src: url('/Fonts/nunito-extralight-webfont.woff2') format('woff2'),
-       url('/Fonts/nunito-extralight-webfont.woff') format('woff');
+  src: url('Fonts/nunito-extralight-webfont.woff2') format('woff2'),
+       url('Fonts/nunito-extralight-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-h1,h2{font-family: 'denk_oneregular'; font-size: clamp(3rem, 5vw, 7rem); line-height: 1.15; text-transform: none; text-decoration: none; margin-top: var(--dl-space-space-threeunits);}
+h1,h2{font-family: 'denk_oneregular'; font-size: clamp(3rem, 5vw, 7rem); line-height: 1.15;}
 h3,h4,h6{font-family: 'denk_oneregular'; font-size: clamp(1.5rem, 4vw, 3rem);}
 body{font-family: 'nunitomedium'; font-size: clamp(1.125rem, 1vw, 2rem)}
-
-.home-header {
-  height: 101vh;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--notland-accent);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .button {
   color: var(--dl-color-gray-black);
@@ -243,15 +231,46 @@ body{font-family: 'nunitomedium'; font-size: clamp(1.125rem, 1vw, 2rem)}
   align-items: center;
   grid-area: legal;
 }
+
 .footerIcon{
   display:inline-block;
 	width:213px;
 }
+
+.footer-border {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="60"><defs><pattern id="border" patternUnits="userSpaceOnUse" width="635" height="60"><path d="M 27.794277,9.6482623 C 24.148992,9.4741063 21.13802,12.735611 21.480008,16.367755 l 1.573235,16.715088 c 0.342156,3.632618 -2.664847,6.719485 -6.314255,6.719485 H 0 V 60 H 635 V 39.802328 h -16.73917 c -3.64766,0 -6.71254,-3.093247 -6.31389,-6.719485 l 1.57362,-20.332681 c 0.38595,-3.6266696 -2.66188,-6.7194964 -6.31381,-6.7199495 l -50.4463,3.6180498 c -3.644,-0.1746035 -6.65633,3.0873487 -6.31401,6.7194927 l 1.57403,16.715088 c 0.33798,3.632137 -2.66275,6.719485 -6.31478,6.719485 h -33.23685 c -3.64759,0 -6.65559,-3.087347 -6.31404,-6.719485 l 1.57317,-10.684876 c 0.33601,-3.632165 -2.6627,-6.719493 -6.31309,-6.719493 h -50.44876 c -3.64971,0 -6.65624,3.087349 -6.31438,6.719493 l 1.57173,10.684876 c 0.35703,3.632625 -2.66621,6.719485 -6.31459,6.719485 h -33.23621 c -3.64798,0 -6.71254,-3.093247 -6.31396,-6.719485 l 1.57259,-14.302469 c 0.39806,-3.62668 -2.66593,-6.719496 -6.31407,-6.719949 L 345.17437,9.6482623 c -3.6453,-0.1745525 -6.65582,3.0873487 -6.31421,6.7194927 l 1.57382,16.715088 c 0.34027,3.632137 -2.66495,6.719485 -6.31478,6.719485 h -33.237 c -3.64887,0 -6.61297,-3.083676 -6.31387,-6.719485 l 1.57237,-19.127705 c 0.29876,-3.635796 -2.66525,-6.7190382 -6.31443,-6.7194941 l -50.44545,0.7239656 c -3.64892,0.051981 -6.62492,3.0841575 -6.31447,6.7194935 l 1.57311,18.40374 c 0.31052,3.635292 -2.66477,6.719485 -6.31443,6.719485 H 195.0881 c -3.64881,0 -6.65535,-3.087347 -6.31374,-6.719485 L 190.6056,6.7194928 C 190.94755,3.0873504 187.94117,2.7952753e-7 184.29212,2.7952753e-7 L 133.5874,3e-7 c -3.64544,0.1747694 -6.71325,3.0932539 -6.31427,6.7199495 l 1.57326,26.3628932 c 0.39917,3.626654 -2.66459,6.719485 -6.31419,6.719485 H 89.294922 c -3.648701,0 -6.712363,-3.093247 -6.313813,-6.719485 l 1.572792,-14.302469 c 0.399278,-3.626677 -2.664913,-6.719496 -6.313882,-6.719949 z" style="fill:%23000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill" id="layer1" /></pattern></defs><rect width="100%" height="100%" fill="url(%23border)"/></svg>');
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="60"><defs><pattern id="border" patternUnits="userSpaceOnUse" width="635" height="60"><path d="M 27.794277,9.6482623 C 24.148992,9.4741063 21.13802,12.735611 21.480008,16.367755 l 1.573235,16.715088 c 0.342156,3.632618 -2.664847,6.719485 -6.314255,6.719485 H 0 V 60 H 635 V 39.802328 h -16.73917 c -3.64766,0 -6.71254,-3.093247 -6.31389,-6.719485 l 1.57362,-20.332681 c 0.38595,-3.6266696 -2.66188,-6.7194964 -6.31381,-6.7199495 l -50.4463,3.6180498 c -3.644,-0.1746035 -6.65633,3.0873487 -6.31401,6.7194927 l 1.57403,16.715088 c 0.33798,3.632137 -2.66275,6.719485 -6.31478,6.719485 h -33.23685 c -3.64759,0 -6.65559,-3.087347 -6.31404,-6.719485 l 1.57317,-10.684876 c 0.33601,-3.632165 -2.6627,-6.719493 -6.31309,-6.719493 h -50.44876 c -3.64971,0 -6.65624,3.087349 -6.31438,6.719493 l 1.57173,10.684876 c 0.35703,3.632625 -2.66621,6.719485 -6.31459,6.719485 h -33.23621 c -3.64798,0 -6.71254,-3.093247 -6.31396,-6.719485 l 1.57259,-14.302469 c 0.39806,-3.62668 -2.66593,-6.719496 -6.31407,-6.719949 L 345.17437,9.6482623 c -3.6453,-0.1745525 -6.65582,3.0873487 -6.31421,6.7194927 l 1.57382,16.715088 c 0.34027,3.632137 -2.66495,6.719485 -6.31478,6.719485 h -33.237 c -3.64887,0 -6.61297,-3.083676 -6.31387,-6.719485 l 1.57237,-19.127705 c 0.29876,-3.635796 -2.66525,-6.7190382 -6.31443,-6.7194941 l -50.44545,0.7239656 c -3.64892,0.051981 -6.62492,3.0841575 -6.31447,6.7194935 l 1.57311,18.40374 c 0.31052,3.635292 -2.66477,6.719485 -6.31443,6.719485 H 195.0881 c -3.64881,0 -6.65535,-3.087347 -6.31374,-6.719485 L 190.6056,6.7194928 C 190.94755,3.0873504 187.94117,2.7952753e-7 184.29212,2.7952753e-7 L 133.5874,3e-7 c -3.64544,0.1747694 -6.71325,3.0932539 -6.31427,6.7199495 l 1.57326,26.3628932 c 0.39917,3.626654 -2.66459,6.719485 -6.31419,6.719485 H 89.294922 c -3.648701,0 -6.712363,-3.093247 -6.313813,-6.719485 l 1.572792,-14.302469 c 0.399278,-3.626677 -2.664913,-6.719496 -6.313882,-6.719949 z" style="fill:%23000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill" id="layer1" /></pattern></defs><rect width="100%" height="100%" fill="url(%23border)"/></svg>');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  height: 60px;
+  width:100%;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -55px;
+  background-color: var(--notland-accent);
+}
+
+.footer-border-flag{
+  color: var(--notland-accent);
+  fill: currentColor;
+  position: relative;
+  top: -200px;
+  right: -120px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--notland-accent);
+  margin-top: 7rem;
+}
+
 #DFooter {
+  position: relative;
 	justify-content:center;
 	padding-left:20px;
 	padding-right:20px;
-	background-color: var(--notland-accent);
 }
 
 @media(min-width: 2000px) {
