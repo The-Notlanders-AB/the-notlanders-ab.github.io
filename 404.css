@@ -1,3 +1,4 @@
+
 .not-found-container {
   width: 100%;
   display: flex;
@@ -6,7 +7,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--notland-accent);
+  background-color: var(--notland-blue);
 }
 .not-found-container1 {
   display: flex;
