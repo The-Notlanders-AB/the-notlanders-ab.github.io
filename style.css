@@ -69,7 +69,7 @@
 /* TEXT DEFAULTS */
 h1,h2{font-family: 'denk_oneregular'; font-size: clamp(3rem, 5vw, 7rem); line-height: 1.15;}
 h3,h4,h6{font-family: 'denk_oneregular'; font-size: clamp(1.5rem, 4vw, 3rem);}
-body{font-family: 'nunitobold'; font-size: (1.125rem, 1vw, 2rem);}
+body, p, li{font-family: 'nunitobold'; font-size: clamp(1.125rem, 1vw, 2rem); line-height: 1.2;}
 
 .Content {
   font-size: 16px;
@@ -207,6 +207,9 @@ body{font-family: 'nunitobold'; font-size: (1.125rem, 1vw, 2rem);}
 }
 
 .game-grid-a3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: 1;
   grid-row: 3;
 }
@@ -309,6 +312,14 @@ body{font-family: 'nunitobold'; font-size: (1.125rem, 1vw, 2rem);}
 }
 
 /* FOOTER GRID*/
+
+#sub-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--notland-dark);
+  margin: 1vh;
+}
 
 #footer-grid{
   display: grid;
