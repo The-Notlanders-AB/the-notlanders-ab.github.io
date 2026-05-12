@@ -129,11 +129,12 @@ body, p, li{font-family: 'nunitobold'; font-size: clamp(1.125rem, 1vw, 2rem); li
 #contact-box{
   max-width: 75%;
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 1rem;
 }
 .contact-0{
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 3;
   grid-row: 1;
 }
 .contact-1{
@@ -146,8 +147,13 @@ body, p, li{font-family: 'nunitobold'; font-size: clamp(1.125rem, 1vw, 2rem); li
 }
 
 .contact-3{
-  grid-column: 3 / span 2;
+  grid-column: 3;
   grid-row: 2;
+}
+
+.contact-4{
+  grid-column: 1 / span 3;
+  grid-row: 3;
 }
 
 .skew-right{
