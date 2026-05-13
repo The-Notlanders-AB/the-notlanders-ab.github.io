@@ -67,7 +67,7 @@
 }
 
 /* TEXT DEFAULTS */
-h1,h2{font-family: 'denk_oneregular'; font-size: clamp(3rem, 5vw, 7rem); line-height: 1.15;}
+h1,h2{font-family: 'denk_oneregular'; font-size: clamp(3rem, 5vw, 7rem); line-height: 1.15; margin-bottom: 1rem;}
 h3,h4,h6{font-family: 'denk_oneregular'; font-size: clamp(1.5rem, 4vw, 3rem);}
 body, p, li{font-family: 'nunitobold'; font-size: clamp(1.125rem, 1vw, 2rem); line-height: 1.2;}
 
@@ -129,12 +129,13 @@ body, p, li{font-family: 'nunitobold'; font-size: clamp(1.125rem, 1vw, 2rem); li
 #contact-box{
   max-width: 75%;
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 1rem;
+  row-gap: 2rem;
+  align-items: center;
 }
 .contact-0{
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 4;
   grid-row: 1;
 }
 .contact-1{
@@ -152,7 +153,12 @@ body, p, li{font-family: 'nunitobold'; font-size: clamp(1.125rem, 1vw, 2rem); li
 }
 
 .contact-4{
-  grid-column: 1 / span 3;
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.contact-email{
+  grid-column: 1 / span 4;
   grid-row: 3;
 }
 
@@ -330,50 +336,56 @@ body, p, li{font-family: 'nunitobold'; font-size: clamp(1.125rem, 1vw, 2rem); li
 
 #footer-grid{
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: auto auto;
-  justify-content: center;
+  align-items: center;
   gap: 2vw 0.5vw;
 }
 
 #footer-a1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
   grid-column: 1;
   grid-row: 1;
 }
 #footer-b1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
   grid-column: 2;
   grid-row: 1;
 }
 
 #footer-c1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
   grid-column: 3;
   grid-row: 1;
 }
 
+#footer-d1{
+
+
+  grid-column: 4;
+  grid-row: 1;
+}
+
+#footer-e1{
+
+
+  grid-column: 5;
+  grid-row: 1;
+}
 #footer-a2{
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-column: 1;
+  grid-column: 1 / span 2;
   grid-row: 2;
+  justify-self: center;
 }
 
 #footer-bc2{
-  display: flex;
-  align-items:flex-end;
-  justify-content: center;
-  grid-column: 2 / span 2;
+  grid-column: 3 / span 3;
   grid-row: 2;
+  justify-self: center;
 }
 
 #footer-logo{
